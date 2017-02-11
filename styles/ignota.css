@@ -1,0 +1,80 @@
+body {
+    margin: 0 auto;
+    max-width: 36em;
+    padding: 3em 1em;
+
+    font-family: 'Averia Serif Libre', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+input {
+    font-family: 'Averia Serif Libre', sans-serif;
+    font-size: 1em;
+    line-height: 2;
+
+    padding: 0 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: 'Averia Serif Libre', sans-serif;
+    font-size: 1em;
+    line-height: 2;
+
+    padding: 0 1em;
+    margin: 0;
+}
+
+.page-title {
+    margin-top: 0;
+    text-align: center;
+}
+
+.block-center-btn {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+#dice-pool {
+    display: block;
+    margin: 1em auto;
+    width: 100%;
+    max-width: 20em;
+}
+
+#roll {
+    width: 100%;
+    max-width: 8em;
+}
+
+.result-card {
+    border: 5px solid #555;
+    padding: 4px;
+    margin-top: 3em;
+}
+.result-card .result-card-content {
+    border: 2px solid #555;
+    padding: 1em;
+}
+.result-card .result-card-content .result-card-title {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+.result-card .result-card-content .result-card-detail {
+    color: #888;
+    margin-top: .5em;
+}
+.result-card .result-card-content .result-card-dice,
+.result-card .result-card-content .result-card-command {
+    margin: 0;
+}
