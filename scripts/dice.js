@@ -17,7 +17,7 @@ class DicePool {
     }
 
     parseCommand() {
-        let dIndex = this.command.indexOf('d');
+        let dIndex = this.command.toLowerCase().indexOf('d');
         this.numberOfDice = Number(this.command.slice(0, dIndex));
         this.sidesOnDice = Number(this.command.slice(dIndex + 1));
     }
@@ -51,13 +51,22 @@ function rollDicePool() {
     let dicePoolCommand = dicePoolInput.value;
     resetDicePoolInput();
 
-    let dicePoolResult = new DicePool(dicePoolCommand);
-    addResultElement(dicePoolResult);
+    if (validateDicePoolInput(dicePoolCommand)) {
+        let dicePoolResult = new DicePool(dicePoolCommand);
+        addResultElement(dicePoolResult);
+    } else {
+
+    }
 }
 
 function resetDicePoolInput() {
     dicePoolInput.value = '';
     dicePoolInput.focus();
+}
+
+function validateDicePoolInput(command) {
+    let diceReg = /^([1-9][0-9]*(d|D)[1-9][0-9]*)((\+|-)\d+)?$/;
+    return diceReg.test(command);
 }
 
 function addResultElement(dicePool) {
