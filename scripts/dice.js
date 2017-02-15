@@ -17,22 +17,11 @@ class DicePool {
     }
 
     parseCommand() {
-        let tempCommand = this.command;
+        let commandSplit = this.command.split(/(d|-\d+|\+\d+)/gi, 4);
 
-        if (tempCommand.includes('+')) {
-            let modIndex = tempCommand.indexOf('+');
-            this.modifier = Number(tempCommand.slice(modIndex));
-            tempCommand = tempCommand.slice(0, modIndex);
-        } else if (tempCommand.includes('-')) {
-            let modIndex = tempCommand.indexOf('-');
-            this.modifier = Number(tempCommand.slice(modIndex));
-            tempCommand = tempCommand.slice(0, modIndex);
-        } else {
-            this.modifier = 0;
-        }
-        let dIndex = tempCommand.toLowerCase().indexOf('d');
-        this.numberOfDice = Number(tempCommand.slice(0, dIndex));
-        this.sidesOnDice = Number(tempCommand.slice(dIndex + 1));
+        this.numberOfDice = Number(commandSplit[0]);
+        this.sidesOnDice = Number(commandSplit[2]);
+        this.modifier = Number(commandSplit[3]) || 0;
     }
 
     rollPool() {
