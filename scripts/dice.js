@@ -52,18 +52,24 @@ let results = document.querySelector('#results');
 
 function rollDicePool() {
     let dicePoolCommand = dicePoolInput.value;
-    resetDicePoolInput();
 
     if (validateDicePoolInput(dicePoolCommand)) {
+        resetDicePoolInput();
         let dicePoolResult = new DicePool(dicePoolCommand);
         addResultElement(dicePoolResult);
     } else {
-
+        showDicePoolInputError();
     }
 }
 
 function resetDicePoolInput() {
+    dicePoolInput.className = '';
     dicePoolInput.value = '';
+    dicePoolInput.focus();
+}
+
+function showDicePoolInputError() {
+    dicePoolInput.className = 'error';
     dicePoolInput.focus();
 }
 
