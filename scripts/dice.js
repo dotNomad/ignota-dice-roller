@@ -17,11 +17,12 @@ class DicePool {
     }
 
     parseCommand() {
-        let commandSplit = this.command.split(/(d|-\d+|\+\d+)/gi, 4);
+        let dicePoolReg = /^([1-9][0-9]*)(d)([1-9][0-9]*)([\+-]\d+)?$/i;
+        let result = dicePoolReg.exec(this.command);
 
-        this.numberOfDice = Number(commandSplit[0]);
-        this.sidesOnDice = Number(commandSplit[2]);
-        this.modifier = Number(commandSplit[3]) || 0;
+        this.numberOfDice = Number(result[1]);
+        this.sidesOnDice = Number(result[3]);
+        this.modifier = Number(result[4]);
     }
 
     rollPool() {
@@ -67,8 +68,8 @@ function resetDicePoolInput() {
 }
 
 function validateDicePoolInput(command) {
-    let diceReg = /^([1-9][0-9]*(d|D)[1-9][0-9]*)((\+|-)\d+)?$/;
-    return diceReg.test(command);
+    let dicePoolReg = /^([1-9][0-9]*)(d)([1-9][0-9]*)([\+-]\d+)?$/i;
+    return dicePoolReg.test(command);
 }
 
 function addResultElement(dicePool) {
