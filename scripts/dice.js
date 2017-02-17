@@ -22,7 +22,7 @@ class DicePool {
 
         this.numberOfDice = Number(result[1]);
         this.sidesOnDice = Number(result[3]);
-        this.modifier = Number(result[4]);
+        this.modifier = Number(result[4]) || 0;
     }
 
     rollPool() {
