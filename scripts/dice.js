@@ -44,11 +44,9 @@ class DicePool {
 
 let dicePoolInput = document.querySelector('#dice-pool');
 
-let rollButton = document.querySelector('#roll');
-rollButton.addEventListener('click', rollDicePool);
-
 let results = document.querySelector('#results');
 
+let form = document.getElementById('dice-pool-form');
 
 function rollDicePool() {
     let dicePoolCommand = dicePoolInput.value;
@@ -64,7 +62,7 @@ function rollDicePool() {
 
 function resetDicePoolInput() {
     dicePoolInput.className = '';
-    dicePoolInput.value = '';
+    form.reset();
     dicePoolInput.focus();
 }
 
@@ -112,3 +110,8 @@ function addResultElement(dicePool) {
 
     results.insertBefore(resultCard, results.firstChild);
 }
+
+form.addEventListener("submit", event => {
+    event.preventDefault();
+    rollDicePool();
+});
