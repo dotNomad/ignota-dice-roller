@@ -31,24 +31,9 @@ input:focus {
     border: 2px solid #555;
 }
 
-button {
-    font-family: 'Averia Serif Libre', sans-serif;
-    font-size: 1em;
-    line-height: 2;
-
-    padding: 0 1em;
-    margin: 0;
-}
-
 .page-title {
     margin-top: 0;
     text-align: center;
-}
-
-.block-center-btn {
-    display: block;
-    margin: auto;
-    cursor: pointer;
 }
 
 #dice-pool {
@@ -78,11 +63,6 @@ button {
 
 input.error ~ .dice-pool-error {
     display: block;
-}
-
-#roll {
-    width: 100%;
-    max-width: 8em;
 }
 
 .result-card {
