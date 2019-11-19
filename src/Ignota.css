@@ -1,0 +1,19 @@
+.page-title {
+  margin-top: 0;
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 36em;
+  padding: 3em 1em;
+
+  font-family: 'Averia Serif Libre', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555;
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+}
