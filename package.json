@@ -1,6 +1,7 @@
 {
   "name": "ignota-dice-roller",
   "version": "0.1.0",
+  "homepage": "https://dotnomad.github.io/ignota-dice-roller",
   "private": true,
   "dependencies": {
     "react": "^16.11.0",
