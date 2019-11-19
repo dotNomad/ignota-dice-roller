@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ignota-dice-roller/static/css/main.9cd3ff85.chunk.css",
-    "main.js": "/ignota-dice-roller/static/js/main.d8be0bc5.chunk.js",
-    "main.js.map": "/ignota-dice-roller/static/js/main.d8be0bc5.chunk.js.map",
+    "main.js": "/ignota-dice-roller/static/js/main.6e36c345.chunk.js",
+    "main.js.map": "/ignota-dice-roller/static/js/main.6e36c345.chunk.js.map",
     "runtime-main.js": "/ignota-dice-roller/static/js/runtime-main.4ff4a928.js",
     "runtime-main.js.map": "/ignota-dice-roller/static/js/runtime-main.4ff4a928.js.map",
     "static/js/2.e075a881.chunk.js": "/ignota-dice-roller/static/js/2.e075a881.chunk.js",
     "static/js/2.e075a881.chunk.js.map": "/ignota-dice-roller/static/js/2.e075a881.chunk.js.map",
     "index.html": "/ignota-dice-roller/index.html",
-    "precache-manifest.b93ea0d52076e3797236711f3c3f0c7f.js": "/ignota-dice-roller/precache-manifest.b93ea0d52076e3797236711f3c3f0c7f.js",
+    "precache-manifest.d916a1106ef6661eda245fde11909dc2.js": "/ignota-dice-roller/precache-manifest.d916a1106ef6661eda245fde11909dc2.js",
     "service-worker.js": "/ignota-dice-roller/service-worker.js",
     "static/css/main.9cd3ff85.chunk.css.map": "/ignota-dice-roller/static/css/main.9cd3ff85.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.4ff4a928.js",
     "static/js/2.e075a881.chunk.js",
     "static/css/main.9cd3ff85.chunk.css",
-    "static/js/main.d8be0bc5.chunk.js"
+    "static/js/main.6e36c345.chunk.js"
   ]
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ignota-dice-roller/precache-manifest.b93ea0d52076e3797236711f3c3f0c7f.js"
+  "/ignota-dice-roller/precache-manifest.d916a1106ef6661eda245fde11909dc2.js"
 );
 
 self.addEventListener('message', (event) => {
